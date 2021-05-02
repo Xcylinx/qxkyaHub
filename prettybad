@@ -1,0 +1,709 @@
+local MainGui = Instance.new("ScreenGui")
+local SearchIcon = Instance.new("Frame")
+local IconCorner = Instance.new("UICorner")
+local Image = Instance.new("ImageLabel")
+local Button = Instance.new("TextButton")
+local SearchFrame = Instance.new("Frame")
+local IconCorner_2 = Instance.new("UICorner")
+local SearchBox = Instance.new("TextBox")
+local IconCorner_3 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local Items = Instance.new("Frame")
+local Noclip = Instance.new("TextButton")
+local IconCorner_4 = Instance.new("UICorner")
+local InformationFrame = Instance.new("Frame")
+local IconCorner_5 = Instance.new("UICorner")
+local Text = Instance.new("TextLabel")
+local Fly = Instance.new("TextButton")
+local IconCorner_6 = Instance.new("UICorner")
+local InformationFrame_2 = Instance.new("Frame")
+local IconCorner_7 = Instance.new("UICorner")
+local Text_2 = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local NameESP = Instance.new("TextButton")
+local IconCorner_8 = Instance.new("UICorner")
+local InformationFrame_3 = Instance.new("Frame")
+local IconCorner_9 = Instance.new("UICorner")
+local Text_3 = Instance.new("TextLabel")
+local Sprint = Instance.new("TextButton")
+local IconCorner_10 = Instance.new("UICorner")
+local InformationFrame_4 = Instance.new("Frame")
+local IconCorner_11 = Instance.new("UICorner")
+local Text_4 = Instance.new("TextLabel")
+local Teleport = Instance.new("TextButton")
+local IconCorner_12 = Instance.new("UICorner")
+local InformationFrame_5 = Instance.new("Frame")
+local IconCorner_13 = Instance.new("UICorner")
+local Text_5 = Instance.new("TextLabel")
+local Delete = Instance.new("TextButton")
+local IconCorner_14 = Instance.new("UICorner")
+local InformationFrame_6 = Instance.new("Frame")
+local IconCorner_15 = Instance.new("UICorner")
+local Text_6 = Instance.new("TextLabel")
+
+MainGui.Name = "MainGui"
+MainGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MainGui.DisplayOrder = 10
+MainGui.ResetOnSpawn = false
+
+SearchIcon.Name = "SearchIcon"
+SearchIcon.Parent = MainGui
+SearchIcon.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SearchIcon.BackgroundTransparency = 0.500
+SearchIcon.Position = UDim2.new(0, 104,-0.031, 0)
+SearchIcon.Size = UDim2.new(0, 32, 0, 32)
+
+IconCorner.CornerRadius = UDim.new(0.25, 0)
+IconCorner.Name = "IconCorner"
+IconCorner.Parent = SearchIcon
+
+Image.Name = "Image"
+Image.Parent = SearchIcon
+Image.AnchorPoint = Vector2.new(0.5, 0.5)
+Image.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Image.BackgroundTransparency = 1.000
+Image.Position = UDim2.new(0.5, 0, 0.5, 0)
+Image.Size = UDim2.new(0.8125, 0, 0.8125, 0)
+Image.Image = "rbxassetid://3605509925"
+
+Button.Name = "Button"
+Button.Parent = SearchIcon
+Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button.BackgroundTransparency = 1.000
+Button.Size = UDim2.new(0, 32, 0, 32)
+Button.Font = Enum.Font.SourceSans
+Button.Text = " "
+Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button.TextSize = 14.000
+
+SearchFrame.Name = "SearchFrame"
+SearchFrame.Parent = MainGui
+SearchFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SearchFrame.BackgroundTransparency = 0.700
+SearchFrame.Position = UDim2.new(-0.2, 16,0, 10)
+
+SearchFrame.Size = UDim2.new(0, 330, 0, 429)
+
+IconCorner_2.CornerRadius = UDim.new(0.0199999996, 0)
+IconCorner_2.Name = "IconCorner"
+IconCorner_2.Parent = SearchFrame
+
+SearchBox.Name = "SearchBox"
+SearchBox.Parent = SearchFrame
+SearchBox.AnchorPoint = Vector2.new(0.5, 0.5)
+SearchBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SearchBox.BackgroundTransparency = 0.500
+SearchBox.Position = UDim2.new(0.5, 0, 0.170000002, 0)
+SearchBox.Size = UDim2.new(0, 290, 0, 38)
+SearchBox.ZIndex = 2
+SearchBox.Font = Enum.Font.Cartoon
+SearchBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+SearchBox.PlaceholderText = "Search Here"
+SearchBox.Text = ""
+SearchBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+SearchBox.TextSize = 17.000
+
+IconCorner_3.CornerRadius = UDim.new(0.25, 0)
+IconCorner_3.Name = "IconCorner"
+IconCorner_3.Parent = SearchBox
+
+Title.Name = "Title"
+Title.Parent = SearchFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Size = UDim2.new(0, 330, 0, 50)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "qxkya Hub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 28.000
+
+Items.Name = "Items"
+Items.Parent = SearchFrame
+Items.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Items.BackgroundTransparency = 1.000
+Items.Position = UDim2.new(0, 0, 0.250815868, 0)
+Items.Size = UDim2.new(0, 330, 0, 321)
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Items
+Noclip.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.BackgroundTransparency = 0.500
+Noclip.Position = UDim2.new(0.0610000007, 0, 0.0199999996, 0)
+Noclip.Size = UDim2.new(0, 290, 0, 42)
+Noclip.Font = Enum.Font.Cartoon
+Noclip.Text = "Noclip (Q)"
+Noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.TextSize = 18.000
+
+IconCorner_4.CornerRadius = UDim.new(0.25, 0)
+IconCorner_4.Name = "IconCorner"
+IconCorner_4.Parent = Noclip
+
+InformationFrame.Name = "InformationFrame"
+InformationFrame.Parent = Noclip
+InformationFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InformationFrame.BackgroundTransparency = 0.500
+InformationFrame.BorderSizePixel = 0
+InformationFrame.Position = UDim2.new(1.09655178, 0, 0, 0)
+InformationFrame.Size = UDim2.new(0, 200, 0, 42)
+InformationFrame.Visible = false
+
+IconCorner_5.CornerRadius = UDim.new(0.200000003, 0)
+IconCorner_5.Name = "IconCorner"
+IconCorner_5.Parent = InformationFrame
+
+Text.Name = "Text"
+Text.Parent = InformationFrame
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.Size = UDim2.new(1, 0, 1, 0)
+Text.Font = Enum.Font.Cartoon
+Text.Text = "Makes you go trough walls"
+Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text.TextSize = 15.000
+
+Fly.Name = "Fly"
+Fly.Parent = Items
+Fly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BackgroundTransparency = 0.500
+Fly.Position = UDim2.new(0.0610000007, 0, 0.170000002, 0)
+Fly.Size = UDim2.new(0, 290, 0, 42)
+Fly.Font = Enum.Font.Cartoon
+Fly.Text = "Fly (E)"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 18.000
+
+IconCorner_6.CornerRadius = UDim.new(0.25, 0)
+IconCorner_6.Name = "IconCorner"
+IconCorner_6.Parent = Fly
+
+InformationFrame_2.Name = "InformationFrame"
+InformationFrame_2.Parent = Fly
+InformationFrame_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InformationFrame_2.BackgroundTransparency = 0.500
+InformationFrame_2.BorderSizePixel = 0
+InformationFrame_2.Position = UDim2.new(1.09655178, 0, 0, 0)
+InformationFrame_2.Size = UDim2.new(0, 200, 0, 42)
+InformationFrame_2.Visible = false
+
+IconCorner_7.CornerRadius = UDim.new(0.200000003, 0)
+IconCorner_7.Name = "IconCorner"
+IconCorner_7.Parent = InformationFrame_2
+
+Text_2.Name = "Text"
+Text_2.Parent = InformationFrame_2
+Text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.BackgroundTransparency = 1.000
+Text_2.Size = UDim2.new(1, 0, 1, 0)
+Text_2.Font = Enum.Font.Cartoon
+Text_2.Text = "Makes you fly"
+Text_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.TextSize = 15.000
+
+UIListLayout.Parent = Items
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.Padding = UDim.new(0, 8)
+
+NameESP.Name = "NameESP"
+NameESP.Parent = Items
+NameESP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+NameESP.BackgroundTransparency = 0.500
+NameESP.Position = UDim2.new(0.0610000007, 0, 0.0199999996, 0)
+NameESP.Size = UDim2.new(0, 290, 0, 42)
+NameESP.Font = Enum.Font.Cartoon
+NameESP.Text = "Name ESP (V)"
+NameESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+NameESP.TextSize = 18.000
+
+IconCorner_8.CornerRadius = UDim.new(0.25, 0)
+IconCorner_8.Name = "IconCorner"
+IconCorner_8.Parent = NameESP
+
+InformationFrame_3.Name = "InformationFrame"
+InformationFrame_3.Parent = NameESP
+InformationFrame_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InformationFrame_3.BackgroundTransparency = 0.500
+InformationFrame_3.BorderSizePixel = 0
+InformationFrame_3.Position = UDim2.new(1.09655178, 0, 0, 0)
+InformationFrame_3.Size = UDim2.new(0, 200, 0, 42)
+InformationFrame_3.Visible = false
+
+IconCorner_9.CornerRadius = UDim.new(0.200000003, 0)
+IconCorner_9.Name = "IconCorner"
+IconCorner_9.Parent = InformationFrame_3
+
+Text_3.Name = "Text"
+Text_3.Parent = InformationFrame_3
+Text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_3.BackgroundTransparency = 1.000
+Text_3.Size = UDim2.new(1, 0, 1, 0)
+Text_3.Font = Enum.Font.Cartoon
+Text_3.Text = "Makes you go trough walls"
+Text_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_3.TextSize = 15.000
+
+Sprint.Name = "Sprint"
+Sprint.Parent = Items
+Sprint.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Sprint.BackgroundTransparency = 0.500
+Sprint.Position = UDim2.new(0.0610000007, 0, 0.0199999996, 0)
+Sprint.Size = UDim2.new(0, 290, 0, 42)
+Sprint.Font = Enum.Font.Cartoon
+Sprint.Text = "Sprint (Left Shift)"
+Sprint.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sprint.TextSize = 18.000
+
+IconCorner_10.CornerRadius = UDim.new(0.25, 0)
+IconCorner_10.Name = "IconCorner"
+IconCorner_10.Parent = Sprint
+
+InformationFrame_4.Name = "InformationFrame"
+InformationFrame_4.Parent = Sprint
+InformationFrame_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InformationFrame_4.BackgroundTransparency = 0.500
+InformationFrame_4.BorderSizePixel = 0
+InformationFrame_4.Position = UDim2.new(1.09655178, 0, 0, 0)
+InformationFrame_4.Size = UDim2.new(0, 200, 0, 42)
+InformationFrame_4.Visible = false
+
+IconCorner_11.CornerRadius = UDim.new(0.200000003, 0)
+IconCorner_11.Name = "IconCorner"
+IconCorner_11.Parent = InformationFrame_4
+
+Text_4.Name = "Text"
+Text_4.Parent = InformationFrame_4
+Text_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_4.BackgroundTransparency = 1.000
+Text_4.Size = UDim2.new(1, 0, 1, 0)
+Text_4.Font = Enum.Font.Cartoon
+Text_4.Text = "Makes you go trough walls"
+Text_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_4.TextSize = 15.000
+
+Teleport.Name = "Teleport"
+Teleport.Parent = Items
+Teleport.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Teleport.BackgroundTransparency = 0.500
+Teleport.Position = UDim2.new(0.0610000007, 0, 0.0199999996, 0)
+Teleport.Size = UDim2.new(0, 290, 0, 42)
+Teleport.Font = Enum.Font.Cartoon
+Teleport.Text = "Teleport (Ctrl + Click)"
+Teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.TextSize = 18.000
+
+IconCorner_12.CornerRadius = UDim.new(0.25, 0)
+IconCorner_12.Name = "IconCorner"
+IconCorner_12.Parent = Teleport
+
+InformationFrame_5.Name = "InformationFrame"
+InformationFrame_5.Parent = Teleport
+InformationFrame_5.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InformationFrame_5.BackgroundTransparency = 0.500
+InformationFrame_5.BorderSizePixel = 0
+InformationFrame_5.Position = UDim2.new(1.09655178, 0, 0, 0)
+InformationFrame_5.Size = UDim2.new(0, 200, 0, 42)
+InformationFrame_5.Visible = false
+
+IconCorner_13.CornerRadius = UDim.new(0.200000003, 0)
+IconCorner_13.Name = "IconCorner"
+IconCorner_13.Parent = InformationFrame_5
+
+Text_5.Name = "Text"
+Text_5.Parent = InformationFrame_5
+Text_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_5.BackgroundTransparency = 1.000
+Text_5.Size = UDim2.new(1, 0, 1, 0)
+Text_5.Font = Enum.Font.Cartoon
+Text_5.Text = "Makes you go trough walls"
+Text_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_5.TextSize = 15.000
+
+Delete.Name = "Delete"
+Delete.Parent = Items
+Delete.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Delete.BackgroundTransparency = 0.500
+Delete.Position = UDim2.new(0.0610000007, 0, 0.0199999996, 0)
+Delete.Size = UDim2.new(0, 290, 0, 42)
+Delete.Font = Enum.Font.Cartoon
+Delete.Text = "Destroy (Alt + Click)"
+Delete.TextColor3 = Color3.fromRGB(255, 255, 255)
+Delete.TextSize = 18.000
+
+IconCorner_14.CornerRadius = UDim.new(0.25, 0)
+IconCorner_14.Name = "IconCorner"
+IconCorner_14.Parent = Delete
+
+InformationFrame_6.Name = "InformationFrame"
+InformationFrame_6.Parent = Delete
+InformationFrame_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InformationFrame_6.BackgroundTransparency = 0.500
+InformationFrame_6.BorderSizePixel = 0
+InformationFrame_6.Position = UDim2.new(1.09655178, 0, 0, 0)
+InformationFrame_6.Size = UDim2.new(0, 200, 0, 42)
+InformationFrame_6.Visible = false
+
+IconCorner_15.CornerRadius = UDim.new(0.200000003, 0)
+IconCorner_15.Name = "IconCorner"
+IconCorner_15.Parent = InformationFrame_6
+
+Text_6.Name = "Text"
+Text_6.Parent = InformationFrame_6
+Text_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_6.BackgroundTransparency = 1.000
+Text_6.Size = UDim2.new(1, 0, 1, 0)
+Text_6.Font = Enum.Font.Cartoon
+Text_6.Text = "Makes you go trough walls"
+Text_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text_6.TextSize = 15.000
+
+local function QRTIQO_fake_script() -- Button.LocalScript 
+	local script = Instance.new('LocalScript', Button)
+
+	local on=false
+	local f=script.Parent.Parent.Parent.SearchFrame
+
+	function click()
+		if on==false then
+			on=true
+			f:TweenPosition(UDim2.new(0, 16,0, 10),"Out",1)
+		else
+			on=false
+			f:TweenPosition(UDim2.new(-0.2, 16,0, 10),"Out",1)
+		end
+	end
+
+	script.Parent.MouseButton1Click:connect(click)
+end
+coroutine.wrap(QRTIQO_fake_script)()
+local function LKDXD_fake_script() -- Noclip.InfoScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.InformationFrame.Visible = true
+	end)
+
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.InformationFrame.Visible = false
+	end)
+end
+coroutine.wrap(LKDXD_fake_script)()
+local function QAJPWD_fake_script() -- Noclip.Script 
+	local script = Instance.new('LocalScript', Noclip)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local LocalPlayer = game.Players.LocalPlayer
+		local Mouse = LocalPlayer:GetMouse()
+		local Character = game.Players.LocalPlayer.Character
+		Noclip = false
+
+		game:GetService('RunService').Stepped:Connect(function()
+			if Noclip then
+				for i,v in pairs(Character:GetChildren()) do
+					if v.Name == ("UpperTorso") or v.Name == ("LowerTorso") or v.Name == ("Head") or v.Name == ("HumanoidRootPart") then
+						v.CanCollide = false				
+					end		
+				end		
+			end	
+		end)
+
+		Mouse.KeyDown:Connect(function(Key)	
+			if Key == "q" then		
+				Noclip = not Noclip		
+				for i,v in pairs(Character:GetChildren()) do
+					if v.Name == ("UpperTorso") or v.Name == ("LowerTorso") or v.Name == ("Head") or v.Name == ("HumanoidRootPart") then
+						v.CanCollide = false
+					end
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(QAJPWD_fake_script)()
+local function JVQUGBR_fake_script() -- Fly.InfoScript 
+	local script = Instance.new('LocalScript', Fly)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.InformationFrame.Visible = true
+	end)
+
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.InformationFrame.Visible = false
+	end)
+end
+coroutine.wrap(JVQUGBR_fake_script)()
+local function AKPRY_fake_script() -- Fly.Script 
+	local script = Instance.new('LocalScript', Fly)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		repeat wait() 
+		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+		local mouse = game.Players.LocalPlayer:GetMouse() 
+		repeat wait() until mouse
+		local plr = game.Players.LocalPlayer 
+		local torso = plr.Character.Head 
+		local flying = false
+		local deb = true 
+		local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+		local maxspeed = 50 
+		local speed = 0 
+
+		function Fly() 
+			local bg = Instance.new("BodyGyro", torso) 
+			bg.P = 9e4 
+			bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+			bg.cframe = torso.CFrame 
+			local bv = Instance.new("BodyVelocity", torso) 
+			bv.velocity = Vector3.new(0,0.1,0) 
+			bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+			repeat wait() 
+				plr.Character.Humanoid.PlatformStand = true 
+				if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+					speed = speed+.5+(speed/maxspeed) 
+					if speed > maxspeed then 
+						speed = maxspeed 
+					end 
+				elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+					speed = speed-1 
+					if speed < 0 then 
+						speed = 0 
+					end 
+				end 
+				if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+					lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+				elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+					bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+				else 
+					bv.velocity = Vector3.new(0,0.1,0) 
+				end 
+				bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+			until not flying 
+			ctrl = {f = 0, b = 0, l = 0, r = 0} 
+			lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+			speed = 0 
+			bg:Destroy() 
+			bv:Destroy() 
+			plr.Character.Humanoid.PlatformStand = false 
+		end 
+		mouse.KeyDown:connect(function(key) 
+			if key:lower() == "e" then 
+				if flying then flying = false 
+				else 
+					flying = true 
+					Fly() 
+				end 
+			elseif key:lower() == "w" then 
+				ctrl.f = 1 
+			elseif key:lower() == "s" then 
+				ctrl.b = -1 
+			elseif key:lower() == "a" then 
+				ctrl.l = -1 
+			elseif key:lower() == "d" then 
+				ctrl.r = 1 
+			end 
+		end) 
+		mouse.KeyUp:connect(function(key) 
+			if key:lower() == "w" then 
+				ctrl.f = 0 
+			elseif key:lower() == "s" then 
+				ctrl.b = 0 
+			elseif key:lower() == "a" then 
+				ctrl.l = 0 
+			elseif key:lower() == "d" then 
+				ctrl.r = 0 
+			end 
+		end)
+		Fly()
+	end)
+end
+coroutine.wrap(AKPRY_fake_script)()
+local function SHGSA_fake_script() -- NameESP.InfoScript 
+	local script = Instance.new('LocalScript', NameESP)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.InformationFrame.Visible = true
+	end)
+
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.InformationFrame.Visible = false
+	end)
+end
+coroutine.wrap(SHGSA_fake_script)()
+local function AQMDF_fake_script() -- NameESP.Script 
+	local script = Instance.new('LocalScript', NameESP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local LocalPlayer = game.Players.LocalPlayer
+		local Mouse = LocalPlayer:GetMouse()
+		local Character = game.Players.LocalPlayer.Character
+		Noclip = false
+
+		game:GetService('RunService').Stepped:Connect(function()
+			if Noclip then
+				for i,v in pairs(Character:GetChildren()) do
+					if v.Name == ("UpperTorso") or v.Name == ("LowerTorso") or v.Name == ("Head") or v.Name == ("HumanoidRootPart") then
+						v.CanCollide = false				
+					end		
+				end		
+			end	
+		end)
+
+		Mouse.KeyDown:Connect(function(Key)	
+			if Key == "q" then		
+				Noclip = not Noclip		
+				for i,v in pairs(Character:GetChildren()) do
+					if v.Name == ("UpperTorso") or v.Name == ("LowerTorso") or v.Name == ("Head") or v.Name == ("HumanoidRootPart") then
+						v.CanCollide = false
+					end
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(AQMDF_fake_script)()
+local function IIYYNQV_fake_script() -- Sprint.InfoScript 
+	local script = Instance.new('LocalScript', Sprint)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.InformationFrame.Visible = true
+	end)
+
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.InformationFrame.Visible = false
+	end)
+end
+coroutine.wrap(IIYYNQV_fake_script)()
+local function NOVVV_fake_script() -- Sprint.Script 
+	local script = Instance.new('LocalScript', Sprint)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local mouse = game.Players.LocalPlayer:GetMouse()
+		local running = false
+
+		mouse.KeyDown:connect(function (key)
+			key = string.lower(key)
+			if string.byte(key) == 48 then
+				running = true
+				local keyConnection = mouse.KeyUp:connect(function (key)
+					if string.byte(key) == 48 then
+						running = false
+					end
+				end)
+				for i = 1,5 do
+				end
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 50
+				repeat wait () until running == false
+				keyConnection:disconnect()
+				game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+				for i = 1,5 do
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(NOVVV_fake_script)()
+local function CFNB_fake_script() -- Teleport.InfoScript 
+	local script = Instance.new('LocalScript', Teleport)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.InformationFrame.Visible = true
+	end)
+
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.InformationFrame.Visible = false
+	end)
+end
+coroutine.wrap(CFNB_fake_script)()
+local function HRVACYM_fake_script() -- Teleport.Script 
+	local script = Instance.new('LocalScript', Teleport)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Player = game.Players.LocalPlayer
+		local Mouse = Player:GetMouse()
+		local UserInputService = game:GetService('UserInputService')
+
+		local HoldingControl = false
+
+		Mouse.Button1Down:connect(function()
+			if HoldingControl then
+				Player.Character:MoveTo(Mouse.Hit.p)
+			end
+		end)
+
+		UserInputService.InputBegan:connect(function(Input, Processed)
+			if Input.UserInputType == Enum.UserInputType.Keyboard then
+				if Input.KeyCode == Enum.KeyCode.LeftControl then
+					HoldingControl = true
+				elseif Input.KeyCode == Enum.KeyCode.RightControl then
+					HoldingControl = true
+				end
+			end
+		end)
+
+		UserInputService.InputEnded:connect(function(Input, Processed)
+			if Input.UserInputType == Enum.UserInputType.Keyboard then
+				if Input.KeyCode == Enum.KeyCode.LeftControl then
+					HoldingControl = false
+				elseif Input.KeyCode == Enum.KeyCode.RightControl then
+					HoldingControl = false
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(HRVACYM_fake_script)()
+local function ZLNRTP_fake_script() -- Delete.InfoScript 
+	local script = Instance.new('LocalScript', Delete)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.InformationFrame.Visible = true
+	end)
+
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.InformationFrame.Visible = false
+	end)
+end
+coroutine.wrap(ZLNRTP_fake_script)()
+local function XNWCDME_fake_script() -- Delete.Script 
+	local script = Instance.new('LocalScript', Delete)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local Plr = game:GetService("Players").LocalPlayer
+		local Mouse = Plr:GetMouse()
+
+		Mouse.Button1Down:connect(function()
+			if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftAlt) then return end
+			if not Mouse.Target then return end
+			Mouse.Target:Destroy()
+		end)
+	end)
+end
+coroutine.wrap(XNWCDME_fake_script)()
+local function KZDYK_fake_script() -- SearchFrame.LocalScript 
+	local script = Instance.new('LocalScript', SearchFrame)
+
+	local searchBar = script.Parent.SearchBox
+	local items = script.Parent.Items
+
+	function UpdateResults()
+		local search = string.lower(searchBar.Text)
+		for i, v in	 pairs(items:GetChildren()) do
+			if v:IsA("GuiButton") then
+				if search ~= "" then
+					local item = string.lower(v.Text)
+					if string.find(item, search) then
+						v.Visible = true
+					else
+						v.Visible = false
+					end
+				else
+					v.Visible = true
+				end
+			end
+		end
+	end
+
+	searchBar.Changed:Connect(UpdateResults)
+end
+coroutine.wrap(KZDYK_fake_script)()
